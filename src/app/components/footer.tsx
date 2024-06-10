@@ -33,7 +33,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="col-lg-8">
+          {/* <div className="col-lg-8">
             <div className="row links-wrap">
               <div className="col-6 col-sm-6 col-md-3">
                 <ul className="list-unstyled">
@@ -56,11 +56,12 @@ const Footer = () => {
                   <li><Link to="/contactar">Empleos</Link></li>
                   <li><Link to="/nosotros">Nuestro equipo</Link></li>
                   <li><Link to="/nosotros">Liderazgo</Link></li>
-                  {/* <li><Link to="/politica">Política de privacidad</Link></li> */}
+                  <li><Link to="/politica">Política de privacidad</Link></li>
                 </ul>
               </div>
             </div>
           </div>
+           */}
         </div>
 
         <div className="border-top">

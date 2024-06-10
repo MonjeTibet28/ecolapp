@@ -8,21 +8,7 @@ import '../../../public/css/bootstrap.min.css'
 import '../../../public/css/tiny-slider.css'
 
 const services = [
-    {
-        icon: '/images/clasificar.png',
-        title: 'Clasificación de Residuos',
-        description: 'Nuestro equipo se encarga de clasificar los diferentes tipos de residuos en el sitio, asegurando un reciclaje eficiente y responsable.'
-    },
-    {
-        icon: '/images/centro.png',
-        title: 'Centros de Reciclaje',
-        description: 'Contamos con centros de reciclaje avanzados donde transformamos los residuos en nuevos materiales utilizables para la industria de la construcción.'
-    },
-    {
-        icon: '/images/truck.svg',
-        title: 'Logística y Transporte',
-        description: 'Ofrecemos soluciones de transporte y logística para asegurar que los residuos sean recolectados y entregados de manera oportuna y segura.'
-    },
+
     {
         icon: '/images/support.svg',
         title: 'Capacitación y Asesoramiento',
@@ -57,12 +43,12 @@ const ServicesSection = () => {
                 <h1 style={{ fontWeight: 'bold', fontSize: '40px', color: '#2f2f2f', marginTop: '50px' }}>Nuestros Servicios</h1>
                 <div className="row my-5">
                     {services.map((service, index) => (
-                        <div className="col-6 col-md-6 col-lg-3 mb-4" key={index}>
+                        <div className="col-6 col-md-6 col-lg-2 mb-4" style={{margin: '20px'}} key={index}>
                             <div className="feature">
                                 <div className="icon">
                                     <img src={service.icon} alt={service.title} className="img-fluid" />
                                 </div>
-                                <h3>{service.title}</h3>
+                                <h3 style={{fontSize: '20px'}}>{service.title}</h3>
                                 <p>{service.description}</p>
                             </div>
                         </div>

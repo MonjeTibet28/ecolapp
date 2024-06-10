@@ -9,6 +9,7 @@ function contact() {
     return (
         <>
             <HeroSection/>
+            <div style={{padding: 30, background: '#eff2f1'}}/>
             <ContactInformationSection/>
         </>
     );

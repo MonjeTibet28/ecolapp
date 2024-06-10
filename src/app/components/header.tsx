@@ -9,9 +9,9 @@ function Header() {
     return (
         <nav className="custom-navbar navbar navbar-expand-md navbar-dark bg-dark">
             <div className="container">
-                <NavLink className="navbar-brand" style={{fontSize: '42px', color: '#37f400'}} to="/">
+                <NavLink className="navbar-brand" style={{ fontSize: '42px', color: '#37f400' }} to="/">
                     EcolApp<span className="text-danger">
-                        <img className="logo" src="images/hoja.png" alt="EcolApp Logo" style={{marginBottom: '50px'}} />
+                        <img className="logo" src="images/hoja.png" alt="EcolApp Logo" style={{ marginBottom: '50px' }} />
                     </span>
                 </NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +23,9 @@ function Header() {
                         <li><NavLink className="nav-link" to="/servicio">Servicio</NavLink></li>
                         <li><NavLink className="nav-link" to="/contactar">Contactanos</NavLink></li>
                     </ul>
-              
+                    {/* <ul className="custom-navbar-cta navbar-nav mb-2 mb-md-0 ms-5">
+                        <li><NavLink className="nav-link" to="/register"><img src="images/user.svg"/></NavLink></li>
+                    </ul> */}
                 </div>
             </div>
         </nav>
