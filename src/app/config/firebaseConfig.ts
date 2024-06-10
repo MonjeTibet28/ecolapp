@@ -16,7 +16,8 @@ const firebaseConfig = {
   };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
-const analytics = process.browser ? getAnalytics(app) : null;
+const analytics = typeof window !== 'undefined' ? getAnalytics(app) : null;
+
 
 const database = getDatabase(app); // Inicializar la base de datos
 export { auth, analytics, database };

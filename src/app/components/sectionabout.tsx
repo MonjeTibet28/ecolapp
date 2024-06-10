@@ -13,7 +13,7 @@ const OurOriginSection = () => {
         <div className="row justify-content-between align-items-center">
           <div className="col-lg-6">
             <h2 className="section-title" style={{ fontWeight: 'bold', fontSize: '52px', marginBottom: '40px' }}>Nuestro Origen</h2>
-            <p style={{ fontSize: '20px' }}>EcolApp nació en las vibrantes calles de Lima, Perú. Como una empresa peruana apasionada por la sostenibilidad, nos dedicamos a transformar los residuos de construcción, en recursos valiosos que puedan ser reutilizados para futuros proyectos.</p>
+            <p style={{ fontSize: '20px' }}>EcolApp nació para resolver la gestión ineficiente de materiales de desecho en la construcción en Perú. Validada con actores clave del sector, nuestra plataforma conecta a recolectores independientes con usuarios que necesitan deshacerse de desechos reutilizables, ofreciendo una solución sostenible sin costos adicionales de transporte o infraestructura. Somos pioneros en esta iniciativa única en el país.</p>
           </div>
           <div className="col-lg-5">
             <div className="image-wrap">
@@ -38,13 +38,35 @@ const MissionSection = () => {
           </div>
           <div className="col-lg-6">
             <h2 className="section-title" style={{ fontWeight: 'bold', fontSize: '52px', marginBottom: '40px' }}>Misión</h2>
-            <p style={{ fontSize: '20px' }}>Nuestra misión es reducir el impacto ambiental de la industria de la construcción al mismo tiempo que creamos productos de alta calidad y diseño. Trabajamos en estrecha colaboración con arquitectos, diseñadores y constructores para promover prácticas más sostenibles y responsables en la construcción.</p>
+            <p style={{ fontSize: '20px' }}>Revolucionar la gestión de materiales de desecho de construcción mediante una plataforma innovadora que conecta a recolectores independientes con usuarios, promoviendo la reutilización de recursos, la sostenibilidad y el desarrollo de prácticas responsables en la industria de la construcción en Perú.</p>
           </div>
         </div>
       </div>
     </div>
   );
 };
+
+const VisionSection = () => {
+  return (
+    <div className="why-choose-section">
+      <div className="container">
+        <div className="row justify-content-between align-items-center">
+
+          <div className="col-lg-6">
+            <h2 className="section-title" style={{ fontWeight: 'bold', fontSize: '52px', marginBottom: '40px' }}>Visión</h2>
+            <p style={{ fontSize: '20px' }}>Ser la plataforma líder en Perú para la gestión sostenible de materiales de desecho de construcción, reconocida por su impacto positivo en la reducción de residuos y la promoción de una economía circular, donde los desechos de hoy se conviertan en los recursos de mañana.</p>
+          </div>
+          <div className="col-lg-5">
+            <div className="image-wrap">
+              <img src="images/mueble3.png" alt="Misión de EcolApp" className="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 
 const TeamSection = () => {
   return (
@@ -136,4 +158,4 @@ const TeamSection = () => {
   );
 };
 
-export { TeamSection, MissionSection, OurOriginSection }
+export { TeamSection, MissionSection, OurOriginSection, VisionSection }

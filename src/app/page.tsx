@@ -16,7 +16,7 @@ import '../../public/css/bootstrap.min.css';
 import '../../public/css/tiny-slider.css';
 import ClientOnly from './clienteOnly';
 
-function App() {
+const App: React.FC = () => {
     return (
         <ClientOnly>
             <Router>

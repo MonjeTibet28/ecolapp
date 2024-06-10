@@ -1,6 +1,6 @@
 // src/pages/Nosotros.js
 import React from 'react';
-import { MissionSection, OurOriginSection, TeamSection } from '../components/sectionabout';
+import { MissionSection, OurOriginSection, TeamSection, VisionSection } from '../components/sectionabout';
 
 import '../../../public/css/style.css'
 import '../../../public/css/bootstrap.min.css'
@@ -10,6 +10,7 @@ function about() {
         <>
             <OurOriginSection/>
             <MissionSection/>
+            <VisionSection/>
             <TeamSection/>
         </>
     );

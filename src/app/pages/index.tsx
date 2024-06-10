@@ -5,7 +5,7 @@ import { HeroSection, WeHelpSection, WhyChooseUsSection } from '../components/se
 import '../../../public/css/style.css'
 import '../../../public/css/bootstrap.min.css'
 import '../../../public/css/tiny-slider.css'
-function Home() {
+const Home: React.FC = () => {
     return (
         <>
             <HeroSection/>
