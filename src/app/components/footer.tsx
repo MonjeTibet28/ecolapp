@@ -10,28 +10,39 @@ import '../../../public/css/tiny-slider.css'
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  return ( 
+  return (
     <footer className="footer-section" >
+
+
       <div className="container relative" >
-        <div className="sofa-img">
-          <img src="images/sofa.png" alt="Sofa" className="img-fluid" />
+
+        <div className="sofa-img" style={{margin: '-100px'}}>
+          <img className='img-fluid' src="images/fondo2.png" alt="" />
         </div>
 
-        <div className="row g-5 mb-5">
+
+        <div className="row g-5 mb-5" >
           <div className="col-lg-4">
-            <div className="mb-4 footer-logo-wrap">
-              <Link className="navbar-brand" style={{fontSize: '42px', color: '#37f400'}} to="/">
-                EcolApp<span className="text-danger">
-                  <img className="logo" src="images/hoja.png" alt="EcolApp Logo" style={{marginBottom: '50px'}}/>
-                </span>
+            <div className="mb-4 footer-logo-wrap" style={{ marginTop: '30px' }}>
+              <Link className="navbar-brand" to="/">
+                <img className="logo img-fluid" src="images/logo.png" alt="EcolApp Logo" style={{ width: '40%' }} />
               </Link>
             </div>
             <p className="mb-4">En EcolApp, nos esforzamos por transformar los residuos de construcción en oportunidades sostenibles. Nuestro compromiso es mantener un mundo más limpio y habitable.</p>
             <ul className="list-unstyled ">
-              <li><a style={{marginRight: '20px', fontSize: '24px'}} href="https://www.facebook.com/profile.php?id=61560746574437" target="_blank" aria-label="Facebook"><img src="images/facebook.png" alt="TikTok" /></a>
-              <a href="https://www.tiktok.com/@ecolapp.oficial" target="_blank" aria-label="TikTok"><img style={{marginBottom: '3.5px'}} src="images/tiktok.png" alt="TikTok" /></a></li>
+              <li><a style={{ marginRight: '20px', fontSize: '24px' }} href="https://www.facebook.com/profile.php?id=61560582821476" target="_blank" aria-label="Facebook"><img src="images/facebook.png" alt="TikTok" /></a>
+                <a href="https://www.tiktok.com/@ecolapp.oficial" target="_blank" aria-label="TikTok"><img style={{ marginBottom: '3.5px' }} src="images/tiktok.png" alt="TikTok" /></a></li>
             </ul>
           </div>
+
+          {/* <div className="col-lg-6">
+          <p className="mb-4" style={{fontSize: '20px'}}>En EcolApp, nos esforzamos por transformar los residuos de construcción en oportunidades sostenibles. Nuestro compromiso es mantener un mundo más limpio y habitable.</p>
+            <ul className="list-unstyled ">
+              <li><a style={{marginRight: '20px', fontSize: '24px'}} href="https://www.facebook.com/profile.php?id=61560582821476" target="_blank" aria-label="Facebook"><img src="images/facebook.png" alt="TikTok" /></a>
+              <a href="https://www.tiktok.com/@ecolapp.oficial" target="_blank" aria-label="TikTok"><img style={{marginBottom: '3.5px'}} src="images/tiktok.png" alt="TikTok" /></a></li>
+            </ul>
+          </div> */}
+
 
           {/* <div className="col-lg-8">
             <div className="row links-wrap">

@@ -591,7 +591,7 @@ background: #eff2f1; }
     z-index: 1;
     right: 0; }
     .footer-section .sofa-img img {
-      max-width: 380px; }
+      max-width: 780px; }
   .footer-section .links-wrap {
     margin-top: 0px; }
     @media (min-width: 992px) {
@@ -713,3 +713,9 @@ textarea {
     height: 50px;
     border-radius: 50%;
     background: rgba(59, 93, 80, 0.2); }
+
+     ul.list-puntos {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    

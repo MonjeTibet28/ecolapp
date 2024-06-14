@@ -10,7 +10,7 @@ const HeroSection = () => (
     <div className="container">
       <div className="row justify-content-between">
         <div className="col-lg-5">
-          <div className="intro-excerpt">
+          <div className="intro-excerpt" style={{marginTop: '60px'}}>
             <h1>Contáctenos</h1>
             <p className="mb-4" style={{ fontSize: '18px' }}>
               Para más información o alguna consulta específica sobre nuestro servicio,
@@ -19,8 +19,8 @@ const HeroSection = () => (
           </div>
         </div>
         <div className="col-lg-7">
-          <div className="hero-img-wrap">
-            <img src='./images/couch.png' alt="Couch" className="img-fluid" />
+          <div className="" style={{textAlign: 'center'}}>
+            <img src='./images/young-woman-telemarketer-agent-corporate-operator-concept.jpg' style={{width: '60%', marginBottom: '-90px'}} alt="Couch" className="img-fluid" />
           </div>
         </div>
       </div>

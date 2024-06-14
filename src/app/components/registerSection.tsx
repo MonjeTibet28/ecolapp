@@ -12,6 +12,7 @@ interface FormData {
   confirmPassword: string;
   address: string;
   constructionType: string; // Nuevo campo
+  userType: string;
 }
 
 const Register: React.FC = () => {
@@ -22,7 +23,8 @@ const Register: React.FC = () => {
     password: '',
     confirmPassword: '',
     address: '',
-    constructionType: '' // Inicializar el nuevo campo
+    constructionType: '', // Inicializar el nuevo campo
+    userType: ''
   });
 
   const navigate = useNavigate(); // Obtener el objeto navigate
@@ -51,7 +53,8 @@ const Register: React.FC = () => {
         lastName: formData.lastName,
         email: formData.email,
         address: formData.address,
-        constructionType: formData.constructionType // Guardar el nuevo campo
+        constructionType: formData.constructionType, // Guardar el nuevo campo
+        userType: formData.userType
       });
 
       console.log('Usuario registrado y datos guardados:', user.uid);
@@ -108,7 +111,7 @@ const Register: React.FC = () => {
                   <div className="form-group row">
                     <div className="col-md-12">
                       <label htmlFor="c_address" className="text-black">
-                        Dirección <span className="text-danger">*</span>
+                        Dirección o Área de Operación <span className="text-danger">*</span>
                       </label>
                       <input
                         type="text"
@@ -123,6 +126,23 @@ const Register: React.FC = () => {
                     </div>
                   </div>
                   <div className="form-group">
+                    <label htmlFor="c_roluser" className="text-black">
+                      ¿Tipo de Usuario? <span className="text-danger">*</span>
+                    </label>
+                    <select
+                      id="c_roluser"
+                      name="userType"
+                      required
+                      className="form-control"
+                      value={formData.userType} // Añadir value para el select
+                      onChange={handleChange} // Añadir onChange para el select
+                    >
+                      <option value="">Seleccionar</option>
+                      <option value="Casa">Cliente</option>
+                      <option value="Apartamento">Recolector</option>
+                    </select>
+                  </div>
+                  {/* <div className="form-group">
                     <label htmlFor="c_rol" className="text-black">
                       ¿Tipo de Construcción? <span className="text-danger">*</span>
                     </label>
@@ -140,7 +160,7 @@ const Register: React.FC = () => {
                       <option value="Calle">Calle</option>
                       <option value="Indrustrial">Zona Industrial</option>
                     </select>
-                  </div>
+                  </div> */}
                   <div className="form-group row ">
                     <div className="col-md-12">
                       <label htmlFor="c_email_address" className="text-black">

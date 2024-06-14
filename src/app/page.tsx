@@ -10,6 +10,7 @@ import Politicas from './pages/politicas';
 import Home from './pages/index';
 import Footer from './components/footer';
 import RegisterPage from '../app/pages/register';
+import Peticion from '../app/pages/peticion'
 
 import '../../public/css/style.css';
 import '../../public/css/bootstrap.min.css';
@@ -28,7 +29,7 @@ const App: React.FC = () => {
                             <>
                                 <Header />
                                 <Politicas />
-                                <div className="why-choose-section"/>
+                                <div className="why-choose-section" />
                                 <Footer />
                             </>
                         }
@@ -39,7 +40,7 @@ const App: React.FC = () => {
                             <>
                                 <Header />
                                 <Nosotros />
-                                <div className="why-choose-section"/>
+                                <div className="why-choose-section" />
                                 <Footer />
                             </>
                         }
@@ -50,7 +51,7 @@ const App: React.FC = () => {
                             <>
                                 <Header />
                                 <Servicio />
-                                <div className="why-choose-section"/>
+                                <div className="why-choose-section" />
                                 <Footer />
                             </>
                         }
@@ -61,7 +62,18 @@ const App: React.FC = () => {
                             <>
                                 <Header />
                                 <Contactar />
-                                <div className="why-choose-section"/>
+                                <div className="why-choose-section" />
+                                <Footer />
+                            </>
+                        }
+                    />
+                    <Route
+                        path="/peticion"
+                        element={
+                            <>
+                                <Header />
+                                <Peticion/>
+                                <div className="why-choose-section" />
                                 <Footer />
                             </>
                         }
@@ -72,7 +84,7 @@ const App: React.FC = () => {
                             <>
                                 <Header />
                                 <Home />
-                                <div className="why-choose-section"/>
+                                <div className="why-choose-section" />
                                 <Footer />
                             </>
                         }

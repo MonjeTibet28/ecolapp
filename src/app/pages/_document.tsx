@@ -24,11 +24,16 @@ class MyDocument extends Document {
                 gtag('config', 'G-0L996028F0');
               `,
             }}
-          />
+
+            />
         </Head>
         <body>
           <Main />
           <NextScript />
+        <Script src="/js/bootstrap.bundle.min.js" defer />
+        <Script src="/js/custom.js" defer />
+        <Script src="/js/tiny-slider.js" defer />
+      
         </body>
       </Html>
     );

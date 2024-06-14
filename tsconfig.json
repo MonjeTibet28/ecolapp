@@ -2,10 +2,12 @@
   "compilerOptions": {
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": false,
+    "checkJs": false,
     "skipLibCheck": true,
     "strict": true,
-    "noEmit": true, // Cambiado a true para evitar la emisión de archivos
+    "noEmit": true, // Ensures no output files are emitted
     "esModuleInterop": true,
+    "noImplicitAny": false,
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
@@ -18,15 +20,16 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "typeRoots": ["./src/@types", "./node_modules/@types"]
     }
   },
   "include": [
-    "src",
-    ".next/types/**/*.ts"
+    "src/**/*",
+    ".next/types/**/*.ts",
+    "declarations.d.ts"
   ],
   "exclude": [
     "node_modules",
-    "outDir" // Asegúrate de excluir el directorio de salida si estás usando uno
+    "outDir"
   ]
 }
